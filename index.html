@@ -6,26 +6,36 @@
     <title>Ai Poem Generator</title>
     <!--stylesheet link-->
     <link rel="stylesheet" href="src\style.css" />
+
     <!--TypewriterJS-->
-    <script src="https://unpkg.com/@nicesapien0/typewriter.js/typewriter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.min.js"></script>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>AI French Poem Generator</h1>
-
-      <form id="poem-generator">
-        <input
-          type="text"
-          placeholder="Enter Poem Topic"
-          autofocus
-          required
-          autocomplete="off"
-          class="input-bar"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="poem-container" id="poem-Text">poem will go here</div>
-
+      <main>
+        <div class="form-container">
+          <form id="poem-generator">
+            <input
+              type="text"
+              placeholder="Enter Poem Topic"
+              autofocus
+              required
+              autocomplete="off"
+              class="input-bar"
+              id="user-input"
+            />
+            <input type="submit" class="submit-button" value="Generate Poem" />
+            <small class="example"> i.e Flowers, Baguette, Eiffel Tower</small>
+          </form>
+        </div>
+        <div class="poem-container hidden" id="poem-text">
+          poem will go here
+        </div>
+      </main>
       <footer>
         This project is coded by:
         <a href="https://www.instagram.com/vaneconaccento/" target="_blank">
@@ -38,6 +48,6 @@
       </footer>
     </div>
     <!--js link-->
-    <script src="AI Poem\src\javascript.js"></script>
+    <script src="src\javascript.js"></script>
   </body>
 </html>

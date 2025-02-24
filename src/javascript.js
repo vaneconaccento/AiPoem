@@ -1,13 +1,13 @@
 //typewriter function
 function displayPoem(response) {
   new Typewriter("#poem-text", {
-    strings: [response], // Wrap the response in an array
+    strings: [response], // Wrap response in an array
     autoStart: true,
     delay: 1,
     cursor: "",
   });
 }
-
+//generate poem
 function generatePoem(event) {
   event.preventDefault();
 
@@ -33,6 +33,7 @@ function generatePoem(event) {
     })
     .catch((error) => {
       console.error("Error generating poem:", error);
+      alert("Desolee, il y a un error 😥");
     });
 }
 
