@@ -70,7 +70,18 @@ form {
   padding: 14px 24px;
   position: relative;
   right: -80px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+.submit-button: hover {
+  background: #7042a2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 .hidden {
   display: none;
 }
@@ -79,11 +90,11 @@ form {
   background-color: #ffffff;
   align-content: center;
   padding: 10px;
+  color: #270442;
 }
 .poem {
   font-size: 16px;
   line-height: 2px;
-  color: #270442;
   padding: 20px;
   border-left: 3px solid;
   box-shadow: 0px 20 px 60px rgba(65 50, 100, 0.08);
