@@ -84,14 +84,12 @@ form {
 
 .hidden {
   display: none;
-}
-
-.poem-container {
   background-color: #ffffff;
   align-content: center;
   padding: 10px;
   color: #270442;
 }
+
 .poem {
   font-size: 16px;
   line-height: 2px;

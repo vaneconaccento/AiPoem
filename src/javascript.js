@@ -10,6 +10,7 @@ function displayPoem(response) {
         .replace(/```/g, "")
         .trim()
     : "No poem generated.";
+
   console.log("Cleaned Poem Text:", poemText);
 
   if (typeof poemText === "string" && poemText.length > 0) {
@@ -38,7 +39,7 @@ function generatePoem(event) {
 
   //show poem container
   let poemElement = document.querySelector("#poem-text");
-  poemElement.classList.remove("hidden");
+  poemElement.style.display = "block";
 
   //for debugging
   console.log(`Prompt:${prompt}`);
